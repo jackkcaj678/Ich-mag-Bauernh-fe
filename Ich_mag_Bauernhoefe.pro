@@ -16,3 +16,6 @@ SOURCES += main.cpp\
 HEADERS  += uiwindow.h
 
 FORMS    += uiwindow.ui
+
+OTHER_FILES += \
+    README
