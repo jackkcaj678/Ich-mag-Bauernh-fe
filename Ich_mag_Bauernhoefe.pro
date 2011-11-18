@@ -11,9 +11,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        uiwindow.cpp
+        uiwindow.cpp \
+    lager.cpp
 
-HEADERS  += uiwindow.h
+HEADERS  += uiwindow.h \
+    lager.h
 
 FORMS    += uiwindow.ui
 
