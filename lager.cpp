@@ -79,8 +79,13 @@ bool Lager::einAuslagern(bool einAus, ware objekt, unsigned long anzahl)
             return true;
         }
         else {
-            v_eier -= anzahl;
-            return true;
+            if (anzahl<v_eier){
+                v_eier -= anzahl;
+                return true;
+            }
+            else{
+                return false;
+            }
         }
     }
     else if (objekt == wolle){
@@ -90,7 +95,12 @@ bool Lager::einAuslagern(bool einAus, ware objekt, unsigned long anzahl)
         }
         else {
             v_wolle -= anzahl;
-            return true;
+            if (anzahl<v_wolle){
+                return false;
+            }
+            else{
+                return false;
+            }
         }
     }
      else if (objekt == rindfleisch){
@@ -100,7 +110,12 @@ bool Lager::einAuslagern(bool einAus, ware objekt, unsigned long anzahl)
         }
         else {
             v_rindfleisch -= anzahl;
-            return true;
+            if (anzahl<v_rindfleisch){
+                return false;
+            }
+            else{
+                return false;
+            }
         }
     }
      else if (objekt == milch){
@@ -110,7 +125,12 @@ bool Lager::einAuslagern(bool einAus, ware objekt, unsigned long anzahl)
         }
         else {
             v_milch -= anzahl;
-            return true;
+            if (anzahl<v_milch){
+                return false;
+            }
+            else{
+                return false;
+            }
         }
     }
      else if (objekt == leder){
@@ -120,7 +140,12 @@ bool Lager::einAuslagern(bool einAus, ware objekt, unsigned long anzahl)
         }
         else {
             v_leder -= anzahl;
-            return true;
+            if (anzahl<v_leder){
+                return false;
+            }
+            else{
+                return false;
+            }
         }
     }
      else if (objekt == heu){
@@ -130,7 +155,12 @@ bool Lager::einAuslagern(bool einAus, ware objekt, unsigned long anzahl)
         }
         else {
             v_heu -= anzahl;
-            return true;
+            if (anzahl<v_heu){
+                return false;
+            }
+            else{
+                return false;
+            }
         }
     }
      else if (objekt == aepfel){
@@ -140,7 +170,12 @@ bool Lager::einAuslagern(bool einAus, ware objekt, unsigned long anzahl)
         }
         else {
             v_aepfel -= anzahl;
-            return true;
+            if (anzahl<v_aepfel){
+                return false;
+            }
+            else{
+                return false;
+            }
         }
     }
      else if (objekt == kartoffeln){
@@ -150,7 +185,12 @@ bool Lager::einAuslagern(bool einAus, ware objekt, unsigned long anzahl)
         }
         else {
             v_kartoffeln -= anzahl;
-            return true;
+            if (anzahl<v_kartoffeln){
+                return false;
+            }
+            else{
+                return false;
+            }
         }
     }
      else if (objekt == tomaten){
@@ -160,7 +200,12 @@ bool Lager::einAuslagern(bool einAus, ware objekt, unsigned long anzahl)
         }
         else {
             v_tomaten -= anzahl;
-            return true;
+            if (anzahl<v_tomaten){
+                return false;
+            }
+            else{
+                return false;
+            }
         }
     }
      else if (objekt == huehnchenfleisch){
@@ -170,7 +215,12 @@ bool Lager::einAuslagern(bool einAus, ware objekt, unsigned long anzahl)
         }
         else {
             v_huehnchenfleisch -= anzahl;
-            return true;
+            if (anzahl<v_huehnchenfleisch){
+                return false;
+            }
+            else{
+                return false;
+            }
         }
     }
     else {

@@ -12,10 +12,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         uiwindow.cpp \
-    lager.cpp
+    lager.cpp \
+    test.cpp
 
 HEADERS  += uiwindow.h \
-    lager.h
+    lager.h \
+    test.h
 
 FORMS    += uiwindow.ui
 
