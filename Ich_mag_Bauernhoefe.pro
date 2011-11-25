@@ -13,11 +13,13 @@ TEMPLATE = app
 SOURCES += main.cpp\
         uiwindow.cpp \
     objekt.cpp \
-    tier.cpp
+    tier.cpp \
+    hunh.cpp
 
 HEADERS  += uiwindow.h \
     objekt.h \
-    tier.h
+    tier.h \
+    hunh.h
 
 FORMS    += uiwindow.ui
 

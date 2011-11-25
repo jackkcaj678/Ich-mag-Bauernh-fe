@@ -5,12 +5,11 @@ class Tier : public Objekt
 {
 public:
     Tier();
-    bool istSchlachtBereit();
     unsigned int akutellesAlter();
 private:
     unsigned int lebensDauer;
     unsigned int lebensAlter;
-    unsigned int schlachtBereit;
+    bool schlachtBereit;
     unsigned int hunger;
 
 };

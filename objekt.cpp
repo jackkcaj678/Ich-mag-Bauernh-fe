@@ -5,6 +5,9 @@ Objekt::Objekt()
 einkaufspreis = 0;
 verkaufspreis = 0;
 }
+double Objekt::neueRunde(){
+
+}
 
 bool Objekt::einkaufPreisSetzen(double neuerEinkaufsPreis)
 {

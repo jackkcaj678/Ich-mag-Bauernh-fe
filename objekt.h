@@ -5,6 +5,7 @@ class Objekt
 {
 public:
     Objekt();
+    double neueRunde();
     bool einkaufPreisSetzen(double neuerEinkaufsPreis);
     double einkaufsPreisAbrufen();
     bool verkaufpreisSetzen(double neuerVerkaufsPreis);
