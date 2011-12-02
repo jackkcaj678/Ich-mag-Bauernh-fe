@@ -11,11 +11,20 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        uiwindow.cpp
+        uiwindow.cpp \
+    aktionendialog.cpp \
+    lagerdialog.cpp
 
-HEADERS  += uiwindow.h
+HEADERS  += uiwindow.h \
+    aktionendialog.h \
+    lagerdialog.h
 
-FORMS    += uiwindow.ui
+FORMS    += uiwindow.ui \
+    aktionendialog.ui \
+    lagerdialog.ui
 
 OTHER_FILES += \
     README
+
+RESOURCES += \
+    res.qrc
