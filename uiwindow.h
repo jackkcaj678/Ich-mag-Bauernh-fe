@@ -2,6 +2,8 @@
 #define UIWINDOW_H
 
 #include <QMainWindow>
+#include <windows.h>
+#include <mmsystem.h>
 
 namespace Ui {
     class UiWindow;
@@ -14,6 +16,15 @@ class UiWindow : public QMainWindow
 public:
     explicit UiWindow(QWidget *parent = 0);
     ~UiWindow();
+
+private slots:
+    void on_actionBeenden_triggered();
+
+
+    void on_actionAktionen_2_triggered();
+
+
+    void on_pushButton_clicked();
 
 private:
     Ui::UiWindow *ui;
