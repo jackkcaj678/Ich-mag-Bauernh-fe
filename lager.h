@@ -9,19 +9,20 @@ public:
     enum ware {eier, wolle, rindfleisch, milch, leder, heu, aepfel, kartoffeln, tomaten, huehnchenfleisch};
     QString lagerBestand();
     unsigned long objektBestand(ware objekt);
-    bool einAuslagern(bool einAus, ware objekt, unsigned long anzahl);
+    bool einAuslagern(ware objekt, long anzahl);
+    unsigned long gesammtLager();
 
 private:
-    unsigned long v_eier;
-    unsigned long v_wolle;
-    unsigned long v_rindfleisch;
-    unsigned long v_milch;
-    unsigned long v_leder;
-    unsigned long v_heu;
-    unsigned long v_aepfel;
-    unsigned long v_kartoffeln;
-    unsigned long v_tomaten;
-    unsigned long v_huehnchenfleisch;
+    long v_eier;
+    long v_wolle;
+    long v_rindfleisch;
+    long v_milch;
+    long v_leder;
+    long v_heu;
+    long v_aepfel;
+    long v_kartoffeln;
+    long v_tomaten;
+    long v_huehnchenfleisch;
 
 };
 
