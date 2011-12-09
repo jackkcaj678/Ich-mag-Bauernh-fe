@@ -6,23 +6,365 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>617</width>
-    <height>376</height>
+    <width>518</width>
+    <height>370</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>UiWindow</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Geld:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox">
+          <item>
+           <property name="text">
+            <string>Kuh</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Feld</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Schaf</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Huhn</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tomaten</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kartoffel</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Apfel</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Menge</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="title">
+         <string>Handel</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>140</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Kaufen</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>140</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Verkaufen</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_2">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>40</y>
+           <width>81</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>Feld</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Leder</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Hühnerfleisch</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Rinderfleisch</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Kuh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Schaf</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Huhn</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Tomaten</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Kartoffel</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Apfel</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>40</y>
+           <width>31</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="spinBox">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>90</y>
+           <width>42</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>90</y>
+           <width>46</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Preferred</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>Zum Lager</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>News</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>617</width>
-     <height>24</height>
+     <width>518</width>
+     <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuMen">
+    <property name="title">
+     <string>Menü</string>
+    </property>
+    <widget class="QMenu" name="menuOptionen">
+     <property name="title">
+      <string>Optionen</string>
+     </property>
+     <widget class="QMenu" name="menuCheats_aktivieren">
+      <property name="title">
+       <string>Cheats aktivieren</string>
+      </property>
+      <addaction name="actionAktivieren"/>
+      <addaction name="actionDeaktivieren"/>
+     </widget>
+     <addaction name="actionGrafik"/>
+     <addaction name="menuCheats_aktivieren"/>
+    </widget>
+    <addaction name="actionSavegame_laden"/>
+    <addaction name="menuOptionen"/>
+    <addaction name="actionBeenden"/>
+   </widget>
+   <widget class="QMenu" name="menuCheat_Men">
+    <property name="title">
+     <string>Cooleres Menü</string>
+    </property>
+    <widget class="QMenu" name="menuRohstoffe">
+     <property name="title">
+      <string>Rohstoffe</string>
+     </property>
+     <widget class="QMenu" name="menuTiere">
+      <property name="title">
+       <string>Tiere</string>
+      </property>
+      <addaction name="actionHuhn"/>
+      <addaction name="actionKuh"/>
+      <addaction name="actionSchwein"/>
+      <addaction name="actionRind"/>
+     </widget>
+     <widget class="QMenu" name="menuPflanzen">
+      <property name="title">
+       <string>Pflanzen</string>
+      </property>
+      <addaction name="actionApfelplantage"/>
+      <addaction name="actionKartoffelfarm"/>
+      <addaction name="actionKarottenfeld"/>
+      <addaction name="actionWiese"/>
+     </widget>
+     <addaction name="menuTiere"/>
+     <addaction name="menuPflanzen"/>
+    </widget>
+    <addaction name="menuRohstoffe"/>
+    <addaction name="actionAktionen_2"/>
+   </widget>
+   <addaction name="menuMen"/>
+   <addaction name="menuCheat_Men"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -33,6 +375,91 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSavegame_laden">
+   <property name="text">
+    <string>Savegame laden</string>
+   </property>
+  </action>
+  <action name="actionGrafik">
+   <property name="text">
+    <string>Grafik</string>
+   </property>
+  </action>
+  <action name="actionAktivieren">
+   <property name="text">
+    <string>Aktivieren</string>
+   </property>
+  </action>
+  <action name="actionDeaktivieren">
+   <property name="text">
+    <string>Deaktivieren</string>
+   </property>
+  </action>
+  <action name="actionBeenden">
+   <property name="text">
+    <string>Beenden</string>
+   </property>
+  </action>
+  <action name="actionGeld">
+   <property name="text">
+    <string>Geld</string>
+   </property>
+  </action>
+  <action name="actionHuhn">
+   <property name="text">
+    <string>Huhn</string>
+   </property>
+  </action>
+  <action name="actionKuh">
+   <property name="text">
+    <string>Kuh</string>
+   </property>
+  </action>
+  <action name="actionSchwein">
+   <property name="text">
+    <string>Schwein</string>
+   </property>
+  </action>
+  <action name="actionRind">
+   <property name="text">
+    <string>Rind</string>
+   </property>
+  </action>
+  <action name="actionApfelplantage">
+   <property name="text">
+    <string>Apfelplantage</string>
+   </property>
+  </action>
+  <action name="actionKartoffelfarm">
+   <property name="text">
+    <string>Kartoffelfarm</string>
+   </property>
+  </action>
+  <action name="actionKarottenfeld">
+   <property name="text">
+    <string>Karottenfeld</string>
+   </property>
+  </action>
+  <action name="actionWiese">
+   <property name="text">
+    <string>Wiese</string>
+   </property>
+  </action>
+  <action name="actionLaufwerk_ffnen">
+   <property name="text">
+    <string>Laufwerk öffnen</string>
+   </property>
+  </action>
+  <action name="action_ffnen">
+   <property name="text">
+    <string>Öffnen</string>
+   </property>
+  </action>
+  <action name="actionAktionen_2">
+   <property name="text">
+    <string>Aktionen</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

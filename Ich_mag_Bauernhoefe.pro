@@ -10,21 +10,26 @@ TARGET = Ich_mag_Bauernhoefe
 TEMPLATE = app
 
 SOURCES += main.cpp\
-        uiwindow.cpp \
+    uiwindow.cpp \
     lager.cpp \
     objekt.cpp \
-    spieler.cpp
+    spieler.cpp \
     tier.cpp \
     hunh.cpp
 
 HEADERS  += uiwindow.h \
+    lagerdialog.h \
     lager.h \
     objekt.h \
-    spieler.h
+    spieler.h \
     tier.h \
     hunh.h
 
-FORMS    += uiwindow.ui
+FORMS    += uiwindow.ui \
+    lagerdialog.ui
 
 OTHER_FILES += \
     README
+
+RESOURCES += \
+    res.qrc
