@@ -13,11 +13,11 @@ TEMPLATE = app
 SOURCES += main.cpp\
         uiwindow.cpp \
     lager.cpp \
-    test.cpp
+    spieler.cpp
 
 HEADERS  += uiwindow.h \
     lager.h \
-    test.h
+    spieler.h
 
 FORMS    += uiwindow.ui
 
