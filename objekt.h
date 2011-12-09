@@ -5,14 +5,15 @@ class Objekt
 {
 public:
     Objekt();
-    double neueRunde();
-    bool einkaufPreisSetzen(double neuerEinkaufsPreis);
-    double einkaufsPreisAbrufen();
-    bool verkaufpreisSetzen(double neuerVerkaufsPreis);
-    double verkaufsPreisAbrufen();
-private:
-    double einkaufspreis;
-    double verkaufspreis;
+
+    bool neueRunde(); // In untersten Subklassen reimplementieren!
+
+    double einkaufsPreis();
+    double verkaufsPreis();
+
+protected:
+    double BASIS_EINKAUFSPREIS;
+    double BASIS_VERKAUFSPREIS;
 };
 
 #endif // OBJEKT_H

@@ -10,7 +10,7 @@ TARGET = Ich_mag_Bauernhoefe
 TEMPLATE = app
 
 SOURCES += main.cpp\
-        uiwindow.cpp \
+    uiwindow.cpp \
     lager.cpp \
     objekt.cpp \
     spieler.cpp \
