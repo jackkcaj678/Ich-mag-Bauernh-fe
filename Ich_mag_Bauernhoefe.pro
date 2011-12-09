@@ -9,15 +9,20 @@ QT       += core gui
 TARGET = Ich_mag_Bauernhoefe
 TEMPLATE = app
 
-
 SOURCES += main.cpp\
         uiwindow.cpp \
     lager.cpp \
+    objekt.cpp \
     spieler.cpp
+    tier.cpp \
+    hunh.cpp
 
 HEADERS  += uiwindow.h \
     lager.h \
+    objekt.h \
     spieler.h
+    tier.h \
+    hunh.h
 
 FORMS    += uiwindow.ui
 
