@@ -27,4 +27,4 @@ HEADERS  += uiwindow.h \
 FORMS    += uiwindow.ui
 
 OTHER_FILES += \
-    README
+    README.md
