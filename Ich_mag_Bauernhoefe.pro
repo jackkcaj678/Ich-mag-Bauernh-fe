@@ -13,14 +13,14 @@ SOURCES += main.cpp\
         uiwindow.cpp \
     lager.cpp \
     objekt.cpp \
-    spieler.cpp
+    spieler.cpp \
     tier.cpp \
     hunh.cpp
 
 HEADERS  += uiwindow.h \
     lager.h \
     objekt.h \
-    spieler.h
+    spieler.h \
     tier.h \
     hunh.h
 
