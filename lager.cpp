@@ -2,16 +2,16 @@
 
 Lager::Lager()
 {
-    v_eier =0;
-    v_wolle =0;
-    v_rindfleisch =0;
-    v_milch =0;
-    v_leder =0;
-    v_heu =0;
-    v_aepfel =0;
-    v_kartoffeln =0;
-    v_tomaten =0;
-    v_huehnchenfleisch =0;
+    v_eier = 0;
+    v_wolle = 0;
+    v_rindfleisch = 0;
+    v_milch = 0;
+    v_leder = 0;
+    v_heu = 0;
+    v_aepfel = 0;
+    v_kartoffeln = 0;
+    v_tomaten = 0;
+    v_huehnchenfleisch = 0;
 
 }
 
@@ -69,72 +69,151 @@ unsigned long Lager::objektBestand(ware objekt)
 
 }
 
-bool Lager::einAuslagern(ware objekt, long anzahl)
+bool Lager::einlagern(ware objekt, unsigned long anzahl)
 {
-    if (objekt == eier){
-        if (v_eier+anzahl<0) return false;
-
+    if (objekt == eier) // Eier
+    {
         v_eier += anzahl;
-        return true;
     }
-    else if (objekt == wolle){
-        if (v_wolle+anzahl<0) return false;
-
+    else if (objekt == wolle) // Wolle
+    {
         v_wolle += anzahl;
-        return true;
     }
-    else if (objekt == rindfleisch){
-        if (v_rindfleisch+anzahl<0) return false;
-
+    else if (objekt == rindfleisch) // Rindfleisch
+    {
         v_rindfleisch += anzahl;
-        return true;
     }
-    else if (objekt == milch){
-        if (v_milch+anzahl<0) return false ;
-
+    else if (objekt == milch) // Milch
+    {
         v_milch += anzahl;
-        return true;
     }
-    else if (objekt == leder){
-        if (v_leder+anzahl<0) return false ;
-
+    else if (objekt == leder) // Leder
+    {
         v_leder += anzahl;
-        return true;
     }
-    else if (objekt == heu){
-        if (v_heu+anzahl<0) return false ;
-
+    else if (objekt == heu) // Heu
+    {
         v_heu += anzahl;
-        return true;
     }
-    else if (objekt == aepfel){
-        if (v_aepfel+anzahl<0) return false ;
-
+    else if (objekt == aepfel) // Äpfel
+    {
         v_aepfel += anzahl;
-        return true;
     }
-    else if (objekt == kartoffeln){
-        if (v_kartoffeln+anzahl<0) return false ;
-
+    else if (objekt == kartoffeln) // Kartoffeln
+    {
         v_kartoffeln += anzahl;
-        return true;
     }
-    else if (objekt == tomaten){
-        if (v_tomaten+anzahl<0) return false ;
-
+    else if (objekt == tomaten) // Tomaten
+    {
         v_tomaten += anzahl;
-        return true;
     }
-    else if (objekt == huehnchenfleisch){
-        if (v_huehnchenfleisch+anzahl<0) return false ;
-
+    else if (objekt == huehnchenfleisch) // Hühnchenfleisch
+    {
         v_huehnchenfleisch += anzahl;
-        return true;
     }
-    else {
-        return false;
+    else return false;
+
+    return true;
+}
+
+Lagergut Lager::auslagern(ware objekt, unsigned long anzahl)
+{
+    Lagergut out;
+    out.gut = objekt;
+    out.anzahl = 0;
+
+    if (objekt == eier) // Eier
+    {
+        long tmp = v_eier-anzahl;
+        if (tmp >= 0)
+        {
+            v_eier -= anzahl;
+            out.anzahl = anzahl;
+        }
+    }
+    else if (objekt == wolle) // Wolle
+    {
+        long tmp = v_wolle-anzahl;
+        if (tmp >= 0)
+        {
+            v_wolle -= anzahl;
+            out.anzahl = anzahl;
+        }
+    }
+    else if (objekt == rindfleisch) // Rindfleisch
+    {
+        long tmp = v_rindfleisch-anzahl;
+        if (tmp >= 0)
+        {
+            v_rindfleisch -= anzahl;
+            out.anzahl = anzahl;
+        }
+    }
+    else if (objekt == milch) // Milch
+    {
+        long tmp = v_milch-anzahl;
+        if (tmp >= 0)
+        {
+            v_milch -= anzahl;
+            out.anzahl = anzahl;
+        }
+    }
+    else if (objekt == leder) // Leder
+    {
+        long tmp = v_leder-anzahl;
+        if (tmp >= 0)
+        {
+            v_leder -= anzahl;
+            out.anzahl = anzahl;
+        }
+    }
+    else if (objekt == heu) // Heu
+    {
+        long tmp = v_heu-anzahl;
+        if (tmp >= 0)
+        {
+            v_heu -= anzahl;
+            out.anzahl = anzahl;
+        }
+    }
+    else if (objekt == aepfel) // Äpfel
+    {
+        long tmp = v_aepfel-anzahl;
+        if (tmp >= 0)
+        {
+            v_aepfel -= anzahl;
+            out.anzahl = anzahl;
+        }
+    }
+    else if (objekt == kartoffeln) // Kartoffeln
+    {
+        long tmp = v_kartoffeln-anzahl;
+        if (tmp >= 0)
+        {
+            v_kartoffeln -= anzahl;
+            out.anzahl = anzahl;
+        }
+    }
+    else if (objekt == tomaten) // Tomaten
+    {
+        long tmp = v_tomaten-anzahl;
+        if (tmp >= 0)
+        {
+            v_tomaten -= anzahl;
+            out.anzahl = anzahl;
+        }
+    }
+    else if (objekt == huehnchenfleisch) // Hühnchenfleisch
+    {
+        long tmp = v_huehnchenfleisch-anzahl;
+        if (tmp >= 0)
+        {
+            v_huehnchenfleisch -= anzahl;
+            out.anzahl = anzahl;
+        }
     }
 
+    return out;
 }
 
 unsigned long Lager::gesammtLager(){

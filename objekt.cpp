@@ -2,28 +2,23 @@
 
 Objekt::Objekt()
 {
-einkaufspreis = 0;
-verkaufspreis = 0;
-}
-double Objekt::neueRunde(){
-
+    BASIS_EINKAUFSPREIS = 0;
+    BASIS_VERKAUFSPREIS = 0;
 }
 
-bool Objekt::einkaufPreisSetzen(double neuerEinkaufsPreis)
+bool Objekt::neueRunde()
 {
-    einkaufspreis = neuerEinkaufsPreis;
     return true;
 }
-double Objekt::einkaufsPreisAbrufen(){
-    return einkaufspreis;
+
+double Objekt::einkaufsPreis()
+{
+    return BASIS_EINKAUFSPREIS;
 }
 
-bool Objekt::verkaufPreisSetzen(double neuerVerkaufsPreis){
-    verkaufspreis = neuerVerkaufsPreis;
-    return true;
-}
-double Objekt::verkaufsPreisAbrufen(){
-     return verkaufspreis;
+double Objekt::verkaufsPreis()
+{
+    return BASIS_VERKAUFSPREIS;
 
- }
+}
 

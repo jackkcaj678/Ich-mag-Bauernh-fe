@@ -1,12 +1,16 @@
 #ifndef HUNH_H
 #define HUNH_H
 
-class Hunh : public Tier
+#include "tier.h"
+
+class Huhn : public Tier
 {
 public:
-    Hunh();
+    Huhn();
+    bool neueRunde();
+    Lagergut schlachten();
 
-private
+private:
 
 };
 
