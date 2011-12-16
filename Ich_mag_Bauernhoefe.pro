@@ -10,12 +10,9 @@ TARGET = Ich_mag_Bauernhoefe
 TEMPLATE = app
 
 SOURCES += main.cpp\
-<<<<<<< HEAD
     uiwindow.cpp \
     aktionendialog.cpp \
-=======
-        uiwindow.cpp \
->>>>>>> b0a3eb9... aktionendialog gelöscht
+    uiwindow.cpp \
     lager.cpp \
     lagerdialog.cpp \
     objekt.cpp \
