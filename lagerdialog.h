@@ -2,8 +2,6 @@
 #define LAGERDIALOG_H
 
 #include <QDialog>
-#include <windows.h>
-#include <mmsystem.h>
 
 namespace Ui {
     class LagerDialog;

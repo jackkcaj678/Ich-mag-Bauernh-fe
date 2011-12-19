@@ -11,8 +11,6 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
     uiwindow.cpp \
-    aktionendialog.cpp \
-    uiwindow.cpp \
     lager.cpp \
     lagerdialog.cpp \
     objekt.cpp \
@@ -23,7 +21,6 @@ SOURCES += main.cpp\
 HEADERS  += uiwindow.h \
     lagerdialog.h \
     lager.h \
-    lagerdialog.h \
     objekt.h \
     spieler.h \
     tier.h \

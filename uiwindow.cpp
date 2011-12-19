@@ -1,6 +1,5 @@
 #include "uiwindow.h"
 #include "ui_uiwindow.h"
-#include "aktionendialog.h"
 #include "lager.h"
 #include "lagerdialog.h"
 
@@ -23,8 +22,6 @@ void UiWindow::on_actionBeenden_triggered()
 
 void UiWindow::on_actionAktionen_2_triggered()
 {
-    AktionenDialog* aktionendialog = new AktionenDialog(this);
-    aktionendialog->show();
 }
 
 void UiWindow::on_pushButton_clicked()

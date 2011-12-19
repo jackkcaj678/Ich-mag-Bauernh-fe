@@ -2,8 +2,6 @@
 #define UIWINDOW_H
 
 #include <QMainWindow>
-#include <windows.h>
-#include <mmsystem.h>
 
 namespace Ui {
     class UiWindow;
